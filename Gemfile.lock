@@ -28,6 +28,17 @@ GEM
       rack-mount (~> 0.8.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.0.3)
+    activeadmin (0.4.4)
+      bourbon (>= 1.0.0)
+      devise (>= 1.1.2)
+      fastercsv
+      formtastic (~> 2.1.1)
+      inherited_resources (>= 1.3.1)
+      jquery-rails (>= 1.0.0)
+      kaminari (>= 0.13.0)
+      meta_search (>= 0.9.2)
+      rails (>= 3.0.0)
+      sass (>= 3.1.0)
     activemodel (3.1.3)
       activesupport (= 3.1.3)
       builder (~> 3.0.0)
@@ -46,6 +57,8 @@ GEM
     ansi (1.4.3)
     arel (2.2.3)
     bcrypt-ruby (3.0.1)
+    bourbon (2.1.1)
+      sass (>= 3.1)
     builder (3.0.0)
     carrierwave (0.5.8)
       activesupport (~> 3.0)
@@ -77,6 +90,7 @@ GEM
     excon (0.14.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fastercsv (1.5.5)
     fog (1.4.0)
       builder
       excon (~> 0.14.0)
@@ -88,14 +102,24 @@ GEM
       nokogiri (~> 1.5.0)
       ruby-hmac
     formatador (0.2.3)
+    formtastic (2.1.1)
+      actionpack (~> 3.0)
     fssm (0.2.9)
+    has_scope (0.5.1)
     high_voltage (1.1.1)
     hike (1.2.1)
     i18n (0.6.0)
+    inherited_resources (1.3.1)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6)
     jquery-rails (1.0.19)
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.7.3)
+    kaminari (0.13.0)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      railties (>= 3.0.0)
     launchy (2.1.0)
       addressable (~> 2.2.6)
     letter_opener (0.0.2)
@@ -105,6 +129,11 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_search (1.1.3)
+      actionpack (~> 3.1)
+      activerecord (~> 3.1)
+      activesupport (~> 3.1)
+      polyamorous (~> 0.5.0)
     mime-types (1.19)
     multi_json (1.3.6)
     net-scp (1.0.4)
@@ -143,6 +172,8 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    responders (0.9.1)
+      railties (~> 3.1)
     ruby-hmac (0.4.0)
     sass (3.1.20)
     sass-rails (3.1.6)
@@ -195,6 +226,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activeadmin
   carrierwave
   chosen-rails
   chronic
@@ -207,6 +239,7 @@ DEPENDENCIES
   high_voltage
   jquery-rails
   letter_opener
+  meta_search (>= 1.1.0.pre)
   nested_form!
   newrelic_rpm
   rails (= 3.1.3)

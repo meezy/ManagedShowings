@@ -36,15 +36,15 @@ end
 gem "devise"
 gem "high_voltage"
 gem "therubyracer"
-gem "compass-rails"
-gem "slim-rails"
+gem 'haml'
+gem 'haml-rails'
 gem "letter_opener", :group => :development
 gem "chronic"
 gem "newrelic_rpm"
 gem "whenever", :require => false
 gem "squeel"
 gem "stateflow"
-gem "compass_twitter_bootstrap", :git => "git://github.com/vwall/compass-twitter-bootstrap.git", :group => :assets
+gem "twitter-bootstrap-rails"
 gem "chosen-rails"
 gem "carrierwave"
 gem "fog"

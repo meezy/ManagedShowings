@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails ManagedShowings: test" product="" version="" jdbc-version="" driver-version="" uuid="d5ed9d7b-2996-4885-bea8-bfeadd9b7754">
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:/home/developer/source/ManagedShowings/db/test.sqlite3</jdbc-url>
+  <data-source source="LOCAL" name="Rails ManagedShowings: test" product="" version="" jdbc-version="" driver-version="" uuid="a921ec30-29b6-4474-9d2b-a2a5e5179b9c">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:managedshowings_test</jdbc-url>
+    <user-name>managedshowings</user-name>
+    <user-password>dfc7dfcbdfc4dfcbdfcddfcfdfcedfd9dfc2dfc5dfdddfc3dfc4dfcddfd9</user-password>
     <libraries>
       <library>
-        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/zentus-sqlite-license.txt</url>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-driver-license.txt</url>
       </library>
       <library>
-        <url>jar://$USER_HOME$/.RubyMine32/config/jdbc-drivers/sqlitejdbc-v056.jar!/</url>
+        <url>jar://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-9.1-901.jdbc4.jar!/</url>
       </library>
     </libraries>
   </data-source>
-  <data-source source="LOCAL" name="Rails ManagedShowings: development" product="" version="" jdbc-version="" driver-version="" uuid="bb21e46c-088c-4f1f-8870-1b3b802bcd96">
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:/home/developer/source/ManagedShowings/db/development.sqlite3</jdbc-url>
+  <data-source source="LOCAL" name="Rails ManagedShowings: production" product="" version="" jdbc-version="" driver-version="" uuid="facb6862-0ba0-4cc1-bc1f-1010285f0e7d">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:managedshowings_production</jdbc-url>
+    <user-name>managedshowings</user-name>
+    <user-password>dfc7dfcbdfc4dfcbdfcddfcfdfcedfd9dfc2dfc5dfdddfc3dfc4dfcddfd9</user-password>
     <libraries>
       <library>
-        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/zentus-sqlite-license.txt</url>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-driver-license.txt</url>
       </library>
       <library>
-        <url>jar://$USER_HOME$/.RubyMine32/config/jdbc-drivers/sqlitejdbc-v056.jar!/</url>
+        <url>jar://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-9.1-901.jdbc4.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails ManagedShowings: development" product="" version="" jdbc-version="" driver-version="" uuid="52dce0bb-0f69-4c3e-946a-46922c6b8444">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:managedshowings_development</jdbc-url>
+    <user-name>managedshowings</user-name>
+    <user-password>dfc7dfcbdfc4dfcbdfcddfcfdfcedfd9dfc2dfc5dfdddfc3dfc4dfcddfd9</user-password>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>jar://$USER_HOME$/.RubyMine32/config/jdbc-drivers/postgresql-9.1-901.jdbc4.jar!/</url>
       </library>
     </libraries>
   </data-source>

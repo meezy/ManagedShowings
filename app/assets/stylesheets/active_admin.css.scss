@@ -4,3 +4,29 @@
 
 // To customize the Active Admin interfaces, add your
 // styles here:
+@import "bootstrap_and_overrides.css.less";
+
+a.btn {
+  text-decoration: none;
+  color: black;
+}
+a.accordion-toggle {
+  float: left;
+}
+.task-status {
+  padding: 10px;
+  width: 50%;
+}
+.task-status .progress {
+  margin-bottom: 0px !important;
+}
+.nav-tabs > li.success {
+  border-bottom: 3px solid #468847;
+}
+.nav-tabs > li.warning {
+  border-bottom: 3px solid #e29b20;
+}
+.nav-tabs > li.new {
+  border-bottom: 3px solid gray;
+}
+

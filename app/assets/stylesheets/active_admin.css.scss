@@ -20,6 +20,10 @@ a.accordion-toggle {
 .task-status .progress {
   margin-bottom: 0px !important;
 }
+.nav-tabs > li > a {
+  text-decoration: none;
+  color: black;
+}
 .nav-tabs > li.success {
   border-bottom: 3px solid #468847;
 }

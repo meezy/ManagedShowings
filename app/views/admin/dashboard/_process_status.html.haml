@@ -37,12 +37,18 @@
       .accordion-inner
         .tabbable
           %ul.nav.nav-tabs
-            %li.success
+            %li
               %a{href: '#tab1', 'data-toggle'=> 'tab'}Perform Scans
-            %li.warning.active
+              .progress.progress-success.progress-striped
+                .bar{:style=>'width:95%'}
+            %li.active
               %a{href: '#tab2', 'data-toggle'=> 'tab'}Explore DNS
-            %li.new
+              .progress.progress-warning.progress-striped
+                .bar{:style=>'width:55%'}
+            %li
               %a{href: '#tab3', 'data-toggle'=> 'tab'}Review Results
+              .progress.progress-info.progress-striped
+                .bar{:style=>'width:15%'}
           .tab-content
             .tab-pane#tab1
               .accordion#accordion3
@@ -131,6 +137,92 @@
         .progress{:class => 'progress-striped'}
           .bar{:style=>'width: 30%;'}
     #collapseThree{:class => "accordion-body collapse"}
-      .accordion-inner Pwn some stuff
+      .accordion-inner
+        .tabbable
+          %ul.nav.nav-tabs
+            %li.success
+              %a{href: '#tab1', 'data-toggle'=> 'tab'}Perform Scans
+            %li.warning.active
+              %a{href: '#tab2', 'data-toggle'=> 'tab'}Explore DNS
+            %li.info
+              %a{href: '#tab3', 'data-toggle'=> 'tab'}Review Results
+          .tab-content
+            .tab-pane#tab1
+              .accordion#accordion3
+                .accordion-group
+                  .accordion-heading
+                    %a.accordion-toggle{:class=>'btn btn-large accordion-toggle', "data-toggle" => "modal", "data-parent" => "#accordion3", "href" => "#collapseA1"}
+                      %i.icon-search
+                      NMAP &nbsp;
+                      %span.caret
+                    .task-status
+                      .progress{:class => 'progress-success progress-striped'}
+                        .bar{:style=>'width: 95%;'}
+                    %a.accordion-toggle{:class=>'btn btn-large accordion-toggle', "data-toggle" => "modal", "data-parent" => "#accordion3", "href" => "#collapseB1"}
+                      %i.icon-search
+                      Nessus &nbsp;
+                      %span.caret
+                    .task-status
+                      .progress{:class => 'progress-info progress-striped'}
+                        .bar{:style=>'width: 10%;'}
+                    %a.accordion-toggle{:class=>'btn btn-large accordion-toggle', "data-toggle" => "modal", "data-parent" => "#accordion3", "href" => "#collapseC1"}
+                      %i.icon-search
+                      Qualys?
+                      %span.caret
+                    .task-status
+                      .progress{:class => 'progress-danger progress-striped'}
+                        .bar{:style=>'width: 100%;'}
+                  #collapseA1{:class => "modal hide"}
+                    .modal-header
+                      %button.close{"data-dismiss" => "modal"}x
+                      NMAP Scan Results
+                    .model-body
+                      %p
+                        %strong Here are some sweet results from the scan:
+                        %ul
+                          %li Vuln 1 (should be a vuln table, not this ghetto list)
+                          %li Vuln 2 (should be a vuln table, not this ghetto list)
+                          %li Vuln 3 (should be a vuln table, not this ghetto list)
+                      .alert.alert-info
+                        %strong Still Aggregating!
+                        NMAP is still correlating results and assessing host 'interesting-ness'. The hosts may still change in priority.
+                    .modal-footer
+                      %a.btn{href: '#', "data-dismiss" => 'modal'} Close
+                  #collapseB1{:class => "modal hide"}
+                    .modal-header
+                      %button.close{"data-dismiss" => "modal"}x
+                      Nessus Scan Results
+                    .model-body
+                      %p
+                        %strong Configuration is required before scan can begin
+                        %ul
+                          %li Pretend this is a form for you to put in configuration
+                    .modal-footer
+                      %a.btn{href: '#', "data-dismiss" => 'modal'} Close
+                      %a.btn.btn-primary{href: '#', "data-dismiss" => 'modal'} Save Changes
+                  #collapseC1{:class => "modal hide"}
+                    .modal-header
+                      %button.close{"data-dismiss" => "modal"}x
+                      Qualys Scan Results
+                    .model-body
+                      %p
+                        %strong Qualys Scan Failed!!
+                        %ul
+                          %li Pretend this is a reason why it failed.  Probably a sweet log file
+                    .modal-footer
+                      %a.btn{href: '#', "data-dismiss" => 'modal'} Close
+                      %a.btn.btn-danger{href: '#', "data-dismiss" => 'modal'} Retry
+            .tab-pane.active#tab2
+              .alert.alert-info
+                %strong Manual Step!
+                Please check the DNS for any clues as to what services are cloud-based or not hosted internally
+              %p See if email, authorization, etc. is pointing to external domains
+              .btn-group{"data-toggle"=> "buttons-radio"}
+                %button.btn Not Assessed
+                %button.btn.btn-info In Progress
+                %button.btn.btn-success Completed
+                %button.btn.btn-warning Not Applicable
+            .tab-pane#tab3
+              Display Results (in hover?), allow highlighting of certain results, show recommendations, force a review?
 
 

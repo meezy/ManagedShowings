@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a161f4c4-f440-407f-9ffd-d082fc5434c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/dashboard/_process_status.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/_process_status.html.haml" />
     </list>
     <ignored path="ManagedShowings.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_process_status.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_process_status.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard/_process_status.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="38" selection-start="5391" selection-end="5391" vertical-scroll-proportion="0.0">
+            <state line="56" column="161" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.3968254">
               <folding />
             </state>
           </provider>
@@ -101,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="active_admin.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="active_admin.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.66137564">
+            <state line="20" column="2" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,8 +146,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/active_admin.js" />
-        <option value="$PROJECT_DIR$/app/views/admin/dashboard/_process_status.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/admin/dashboard/_process_status.html.haml" />
       </list>
     </option>
   </component>
@@ -771,16 +772,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard/_process_status.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="38" selection-start="5391" selection-end="5391" vertical-scroll-proportion="0.0">
+        <state line="20" column="2" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard/_process_status.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.66137564">
+        <state line="56" column="161" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.3968254">
           <folding />
         </state>
       </provider>
